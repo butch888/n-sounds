@@ -25,11 +25,11 @@ module.exports = {
         to: path.resolve(__dirname, 'dist')
       },
       {
-        from: path.resolve(__dirname, 'public/.jpg'),
+        from: path.resolve(__dirname, 'public/**/*.jpg'),
         to: path.resolve(__dirname, 'dist')
       },
       {
-        from: path.resolve(__dirname, 'public/.mp3'),
+        from: path.resolve(__dirname, 'public/**/*.mp3'),
         to: path.resolve(__dirname, 'dist')
       },
     ]

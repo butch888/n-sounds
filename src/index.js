@@ -2,8 +2,6 @@ import './index.scss'
 
 const root = document.getElementById('app')
 
-
-
 // Title
 const title = document.createElement('h1')
 title.textContent = 'Sounds of Nature'
@@ -40,7 +38,7 @@ btns.map((el) => {
     } else {
       audio.pause();
       isPlaying = false;
-      e.target.textContent = 'Play';
+      e.target.textContent = el;
     }
 
 // Добавляем обработчик для завершения воспроизведения
@@ -54,6 +52,7 @@ btns.map((el) => {
 
 // Add image
 const image = document.createElement('img')
+image.style.width = '100%'
 root.append(image)
 
 
